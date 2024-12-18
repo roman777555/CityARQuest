@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_map"
+        android:title="Quests Nearby"
+        android:icon="@drawable/ic_quests" />
+    <item
+        android:id="@+id/nav_completed"
+        android:title="Completed Quests"
+        android:icon="@drawable/ic_completed" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile" />
+</menu>

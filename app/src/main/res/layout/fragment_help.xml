@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/helpImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Help Illustration"
+            android:src="@drawable/ic_help"/>
+
+        <TextView
+            android:id="@+id/helpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to City AR Quest!\n\n1. Explore your city and find quests nearby.\n2. Filter quests by difficulty and distance.\n3. Start a quest and follow AR instructions.\n4. Earn points and badges.\n\nEnjoy!"
+            android:paddingTop="16dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>
