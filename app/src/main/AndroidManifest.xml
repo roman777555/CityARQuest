@@ -11,16 +11,18 @@
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-feature android:name="android.hardware.location.gps" android:required="false" />
 
+    <!-- Указываем класс Application -->
     <application
+        android:name=".MyApplication"
         android:label="@string/app_name"
         android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.CityARQuest">
 
-        <!-- API ключ Google Maps -->
+        <!-- API ключ Google Maps считывается из строковых ресурсов -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDoqU3ne_gA0Dk6R9YmVCf0bzXQWwYwY7k" />
+            android:value="@string/google_api_key" />
 
         <!-- Главная активность приложения -->
         <activity

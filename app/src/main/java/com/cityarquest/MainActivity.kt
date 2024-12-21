@@ -1,13 +1,14 @@
 package com.cityarquest
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import com.cityarquest.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.libraries.places.api.net.PlacesClient
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -18,13 +19,18 @@ class MainActivity : AppCompatActivity() {
 
     private var currentMainFragment: Fragment = mapFragment
 
+    lateinit var placesClient: PlacesClient
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+
+        // PlacesClient из MyApplication
+        val app = application as MyApplication
+        placesClient = app.placesClient
 
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
@@ -58,7 +64,6 @@ class MainActivity : AppCompatActivity() {
             }
             currentMainFragment = fragment
         }
-        // Сброс BackStack при переходе между главными вкладками можно добавить при необходимости.
     }
 
     fun navigateToQuestDetail(questId: String) {

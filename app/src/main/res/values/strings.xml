@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">City AR Quest</string>
     <string name="nearby_quests">Quests Nearby</string>
-    <string name="quest_details">Quest Details</string>
     <string name="start_ar_quest">Start AR Quest</string>
     <string name="detail_hint">Tap "Start AR Quest" to begin scanning in AR!</string>
     <string name="completed_quests">Completed Quests</string>
@@ -16,8 +15,35 @@
     <string name="ar_instructions">
     Find the hidden object in the area and then press Scan Object to complete the quest!</string>
     <string name="scan_object">Scan Object</string>
-    <string name="time_left">Time left: %1$d s</string>
-    <string name="quest_failed_timeup">Time is up! Quest failed!</string>
-    <string name="quest_completed_points">Quest Completed! You earned %1$d points in %2$d s!</string>
+    <string name="placeholder_text">No Image Available</string>
+    <string name="difficulty_level">Difficulty Level: %1$d</string>
+    <string name="quest_points">Points: %1$d</string>
+    <string name="quest_details">Quest Details</string>
+    <string name="time_left">Time left: %1$d seconds</string>
+    <string name="quest_completed_points">Quest completed! You earned %1$d points in %2$d seconds.</string>
+    <string name="quest_failed_timeup">Quest failed: Time is up!</string>
+    <string-array name="distance_options">
+        <item>2 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+    </string-array>
+    <string name="google_api_key">AIzaSyCa1UXBR9uxlvm_pl4D8X0U9k6WQ0hJxFo</string>
+    <string name="location_permission_title">Location Access Permission</string>
+    <string name="location_permission_message">This permission is necessary to display your quests on the map.</string>
+    <string name="allow">Allow</string>
+    <string name="cancel">Cancel</string>
+    <string name="permission_denied">Location access permission denied. Some features will be unavailable.</string>
+    <string name="failed_to_obtain_location">Failed to obtain current location.</string>
+    <string name="error_obtaining_location">Error obtaining location: %1$s</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="unknown">Unknown</string>
+    <string name="camera_permission_denied">Camera permission is required to proceed with AR features.</string>
+    <string name="complete_quest">Complete Quest</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="quest_image_cd">Quest Image</string>
+    <string name="no_full_description">No additional info.</string>
+    <string name="quest_already_active">You have another active quest. Finish that?</string>
 
 </resources>

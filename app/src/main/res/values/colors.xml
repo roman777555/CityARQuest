@@ -13,4 +13,8 @@
     <color name="greenDifficulty">#4CAF50</color>
     <color name="yellowDifficulty">#FFC107</color>
     <color name="redDifficulty">#F44336</color>
+    <color name="easy_quest">#8BC34A</color> <!-- Light Green -->
+    <color name="medium_quest">#FFEB3B</color> <!-- Yellow -->
+    <color name="hard_quest">#F44336</color> <!-- Red -->
+    <color name="default_quest">#9E9E9E</color> <!-- Grey -->
 </resources>

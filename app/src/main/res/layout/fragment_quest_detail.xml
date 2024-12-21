@@ -10,13 +10,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Изображение квеста (здание, место) -->
         <ImageView
             android:id="@+id/questImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:contentDescription="@string/quest_image_cd"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_quests" />
+            android:src="@drawable/ic_quests"
+            android:paddingBottom="8dp"/>
 
+        <!-- Название квеста -->
         <TextView
             android:id="@+id/questTitle"
             android:layout_width="match_parent"
@@ -25,36 +29,50 @@
             android:textSize="20sp"
             android:paddingBottom="8dp"/>
 
+        <!-- Короткое описание -->
         <TextView
             android:id="@+id/questDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"/>
 
+        <!-- Дополнительное (полное) описание/подсказки перед началом -->
+        <TextView
+            android:id="@+id/questFullDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:paddingBottom="16dp"/>
+
+        <!-- Уровень сложности -->
         <TextView
             android:id="@+id/questDifficulty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"/>
 
+        <!-- Очки -->
         <TextView
             android:id="@+id/questPoints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"/>
 
+        <!-- Кнопка "Начать квест" -->
         <Button
             android:id="@+id/startArButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/start_ar_quest" />
+            android:text="@string/start_ar_quest"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
+        <!-- Подсказка/рекомендации (короткая) -->
         <TextView
             android:id="@+id/detailHintText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/detail_hint"
             android:paddingTop="8dp"/>
-
     </LinearLayout>
 </ScrollView>

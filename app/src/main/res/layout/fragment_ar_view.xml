@@ -16,7 +16,7 @@
         android:padding="8dp"
         android:layout_marginBottom="20dp"/>
 
-    <!-- Текст таймера (отображаем снизу или выше кнопки) -->
+    <!-- Текст таймера (отображаем сверху) -->
     <TextView
         android:id="@+id/timerText"
         android:layout_width="match_parent"
@@ -36,4 +36,13 @@
         android:layout_gravity="center"
         android:padding="16dp"/>
 
+    <!-- Кнопка для завершения квеста -->
+    <Button
+        android:id="@+id/completeQuestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/complete_quest"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
 </FrameLayout>
